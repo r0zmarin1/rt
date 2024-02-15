@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="900">
+    <Grid>
+        <TabControl>
+            <TabItem  Header="Text">
+                <StackPanel>
+                    <ComboBox x:Name="fontComboBox" ItemsSource="{x:Static Fonts.SystemFontFamilies}"/>
+                    <TextBox FontFamily="{Binding ElementName=fontComboBox, Path=SelectedItem}"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem  Header="Sound">
+                <StackPanel>
+                    <CheckBox Content="Обьемный"/>
+                    <CheckBox Content="Необьемный"/>
+                    <ComboBox>
+                        <ComboBoxItem Content="Redmi Bugs 3Lite"/>
+                        <ComboBoxItem Content="hsdffwsrejsj"/>
+                    </ComboBox>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="BD">
+                <StackPanel>
+                    <Label Content="Сервер:"/>
+                    <TextBox Text="{Binding Ser}"/>
+                    <Label Content="Название:"/>
+                    <TextBox Text="{Binding Nazvanie}"/>
+                    <Label Content="Логин:"/>
+                    <TextBox Text="{Binding Login}"/>
+                    <Label Content="Пароль:"/>
+                    <TextBox Text="{Binding Password}"/>
+                    <Button Content="Тестировать" Click="Test_Click"/>
+                            
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
