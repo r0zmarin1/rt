@@ -36,7 +36,6 @@
                     <Label Content="Пароль:"/>
                     <TextBox Text="{Binding Password}"/>
                     <Button Content="Тестировать" Click="Test_Click"/>
-                            
                 </StackPanel>
             </TabItem>
         </TabControl>

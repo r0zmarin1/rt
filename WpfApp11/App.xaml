@@ -7,29 +7,43 @@
         <ResourceDictionary>
             <Style TargetType="Button">
                 <Setter Property="FontSize" Value="16" />
-                <Setter Property="FontFamily" Value="Calibri" />
-
+                <Setter Property="FontFamily" Value="Calibri"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="Foreground" Value="Salmon"/>
             </Style>
 
-            <Style  TargetType="TabControl">
+            <Style TargetType="TabControl">
                 <Setter Property="FontSize" Value="25" />
-                <Setter Property="FontFamily" Value="Arial Black"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="Foreground" Value="DarkSalmon"/>
             </Style>
 
             <Style  TargetType="Label">
                 <Setter Property="FontSize" Value="25" />
                 <Setter Property="FontFamily" Value="Comic Sans MS" />
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="Foreground" Value="PaleVioletRed"/>
             </Style>
 
            
             <Style  TargetType="CheckBox">
                 <Setter Property="FontSize" Value="25" />
-                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="Foreground" Value="Chocolate"/>
             </Style>
                 
             <Style  TargetType="TextBox">
                 <Setter Property="FontSize" Value="18" />
                 <Setter Property="FontFamily" Value="Comic Sans MS" />
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="Foreground" Value="LightSalmon"/>
             </Style>
         </ResourceDictionary>
 
