@@ -26,8 +26,8 @@ namespace WpfApp11
         }
 
           
-        public string Ser { get; set; }
-        public string Nazvanie { get; set; }
+        public string Server { get; set; }
+        public string Name { get; set; }
         public string Login { get; set; }
         public string TPassword {  get; set; } 
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp11"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="900">
+        Title="MainWindow" Height="700" Width="900" FontFamily="Calibri">
     <Grid>
         <TabControl>
             <TabItem  Header="Text">
@@ -14,22 +14,23 @@
                     <TextBox FontFamily="{Binding ElementName=fontComboBox, Path=SelectedItem}"/>
                 </StackPanel>
             </TabItem>
-            <TabItem  Header="Sound">
+            <TabItem Header="Sound">
                 <StackPanel>
                     <CheckBox Content="Обьемный"/>
                     <CheckBox Content="Необьемный"/>
                     <ComboBox>
-                        <ComboBoxItem Content="Redmi Bugs 3Lite"/>
-                        <ComboBoxItem Content="hsdffwsrejsj"/>
+                        <ComboBoxItem Content="zthf"/>
+                        <ComboBoxItem Content="rdthgfdt"/>
+                        <ComboBoxItem Content="rdthgfdt"/>
                     </ComboBox>
                 </StackPanel>
             </TabItem>
             <TabItem Header="BD">
                 <StackPanel>
                     <Label Content="Сервер:"/>
-                    <TextBox Text="{Binding Ser}"/>
+                    <TextBox Text="{Binding Server}"/>
                     <Label Content="Название:"/>
-                    <TextBox Text="{Binding Nazvanie}"/>
+                    <TextBox Text="{Binding Name}"/>
                     <Label Content="Логин:"/>
                     <TextBox Text="{Binding Login}"/>
                     <Label Content="Пароль:"/>
